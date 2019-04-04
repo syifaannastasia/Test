@@ -175,7 +175,7 @@
                     <div class="sidebar-profile-info">
                         <a href="javascript:void(0);" class="account-settings-link">
                             <p>EAD</p>
-                            <span>ead@gmail.com<i class="material-icons right"></span>
+                            <span>ead@gmail.com<i class="material-icons right">arrow_drop_down</i></span>
                         </a>
                     </div>
                 </div>
@@ -194,9 +194,9 @@
                     </ul>
                 </div>
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="<?php echo base_url(); ?>dasboard_admin"><i class="material-icons" class="active-page"></i>Dashboard</a></li>
+                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="<?php echo base_url(); ?>dasboard_admin"><i class="material-icons" class="active-page">settings_input_svideo</i>Dashboard</a></li>
                     <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons"></i>Data Barang<i class="nav-drop-icon material-icons"></i></a>
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Barang<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="<?php echo base_url('admin/inventaris_admin'); ?>">Inventaris</a></li>
@@ -205,7 +205,7 @@
                         </div>
                     </li>
                     <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons"></i>Pengadaan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">cloud_download</i>Pengadaan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="<?php echo base_url('admin/pengadaan_admin'); ?>">Pengadaan Barang Baru</a></li>
@@ -214,7 +214,7 @@
                         </div>
                     </li>
                     <li class="no-padding">
-                        <a href="<?php echo base_url('admin/request_admin'); ?>" class="waves-effect waves-grey"><i class="material-icons"></i>Request</a>
+                        <a href="<?php echo base_url('admin/request_admin'); ?>" class="waves-effect waves-grey"><i class="material-icons">cloud_upload</i>Request</a>
                     </li>
                 </ul>
             </div>

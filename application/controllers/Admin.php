@@ -109,27 +109,8 @@ class Admin extends CI_Controller {
 		 $this->Inventaris->tambah_barang($nama_barang,$kategori,$jumlah,$deskripsi,$gambar,$status);
 		 redirect(base_url('admin/inventaris_admin'));
 	}
-	public function hapusData($id)
-	{
-		//$this->A_model->hapusData($id);
-		//$this->session->set_flashdata('flash','deleted success');
-		//redirect(site_url('mahasiswa/index'));
-		$nama_barang=$this->input->post('nama_barang');
-		 $kategori=$this->input->post('kategori');
-		 $jumlah=$this->input->post('jumlah');
-		 $deskripsi=$this->input->post('deskripsi');
-		 $gambar=$this->input->post('gambar');
-		 $status=$this->input->post('status');
-		redirect(base_url()."admin/inventaris_admin");
-		
-		//redirect(site_url('../../controllers/Mahasiswa'));
-		
-		
-		//call method hapusDataMahasiswa with parameter id from mahasiswa_model
-		//use flashdata to show alert "dihapus"
-		//back to controller mahasiswa
-
-	}
+	
+	
 
 
 }
