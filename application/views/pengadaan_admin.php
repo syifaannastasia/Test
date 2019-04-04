@@ -12,7 +12,7 @@
     <meta name="author" content="Steelcoders" />
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/materialize/css/materialize.min.css"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?php echo base_url('assets'); ?>/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">
     <link href="<?php echo base_url('assets'); ?>/plugins/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -200,7 +200,7 @@
                     </ul>
                 </div>
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-                    <li class="no-padding"><a class="waves-effect waves-grey active" href="<?php echo base_url('admin/index'); ?>"><i class="material-icons">settings_input_svideo</i>Dashboard</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey active" href="<?php echo base_url(); ?>dasboard_admin"><i class="material-icons">settings_input_svideo</i>Dashboard</a></li>
                     <li class="no-padding">
                         <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Barang<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
@@ -214,7 +214,7 @@
                         <a class="collapsible-header waves-effect waves-grey active"><i class="material-icons">cloud_download</i>Pengadaan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="<?php echo base_url('admin/eksternal_detail'); ?>" class="active-page">Pengadaan Barang Baru</a></li>
+                                <li><a href="<?php echo base_url('admin/pengadaan_admin'); ?>" class="active-page">Pengadaan Barang Baru</a></li>
                                 <li><a href="<?php echo base_url('admin/pengadaan_barang_data_admin'); ?>">Data Pengadaan Barang</a></li>
                             </ul>
                         </div>
@@ -252,12 +252,7 @@
                                                         <label for="quantity">Jumlah</label>
                                                         <input id="quantity" name="quantity" type="number" class="required validate">
                                                     </div></td>
-                                                    <td><select class="input-field browser-default">
-                                                        <option value="" disabled selected>Pilih Satuan Barang</option>
-                                                        <option value="1">Option 1</option>
-                                                        <option value="2">Option 2</option>
-                                                        <option value="3">Option 3</option>
-                                                    </select><br></td>
+
                                                     <td><div class="input-field">
                                                         <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
                                                         <label for="textarea1">Keterangan</label>
@@ -266,7 +261,7 @@
                                                     <td><a class="waves-effect waves-light btn red m-b-xs deleteField">Hapus Barang</a></td>
                                                 </tr>
                                             </table>
-                                            
+
                                         </div>
                                     </form>
                                 </div>
@@ -277,7 +272,7 @@
                                 <a class="waves-effect waves-light btn blue m-b-xs" id="addField" style="width: 80%;">Tambah Barang</a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -314,7 +309,6 @@
     <script src="<?php echo base_url('assets'); ?>/js/pages/form_elements.js"></script>
     <script>
         $(document).ready(function(){
-
           $("#addField").click(function(event) {
             $($("#template").html()).appendTo($("#field tbody")).show("slow");
             if ($("td").hasClass("number")) {
@@ -323,14 +317,11 @@
           }
           event.preventDefault();
       });
-
-
           $(document).on("click", ".deleteField", function(event) {
             var row = $(event.target).closest('tr');
             row.remove();
             event.preventDefault();
         });
-
           $(document).on("click", ".fieldUp, .fieldDown", function(event) {
             var row = $(event.target).closest('tr');
             if ($(this).is(".fieldUp"))
@@ -339,9 +330,7 @@
               row.insertAfter(row.next());
           event.preventDefault();
       });
-
       });
-
   </script>
   <script id="template" type="text/template">
     <tr>

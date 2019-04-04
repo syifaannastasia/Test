@@ -209,7 +209,7 @@
                         <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">cloud_download</i>Pengadaan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="pengadaan.html">Pengadaan Barang Baru</a></li>
+                                <li><a href="<?php echo base_url('admin/pengadaan_admin'); ?>">Pengadaan Barang Baru</a></li>
                                 <li><a href="pengadaan-barang-datal.html">Data Pengadaan Barang</a></li>
                             </ul>
                         </div>

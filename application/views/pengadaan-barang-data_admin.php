@@ -12,7 +12,7 @@
     <meta name="author" content="Steelcoders" />
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/materialize/css/materialize.min.css"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?php echo base_url('assets'); ?>/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">
     <link href="<?php echo base_url('assets'); ?>/plugins/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -194,7 +194,7 @@
                     </ul>
                 </div>
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-                    <li class="no-padding"><a class="waves-effect waves-grey active" href="<?php echo base_url('admin/index'); ?>"><i class="material-icons">settings_input_svideo</i>Dashboard</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey active" href="<?php echo base_url(); ?>dasboard_admin"><i class="material-icons">settings_input_svideo</i>Dashboard</a></li>
                     <li class="no-padding">
                         <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Barang<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
@@ -340,4 +340,4 @@
     <script src="<?php echo base_url('assets'); ?>/js/pages/ui-modals.js"></script>
 
 </body>
-</html>
+</html> 
