@@ -205,7 +205,7 @@
                         </div>
                     </li>
                     <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons"></i>Pengadaan<i class="nav-drop-icon material-icons"></i></a>
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons"></i>Pengadaan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="<?php echo base_url('admin/pengadaan_admin'); ?>">Pengadaan Barang Baru</a></li>
